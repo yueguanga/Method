@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+/*迟到1-10分钟 警告
+迟到11-20分钟 罚款100元
+迟到21-30分钟 罚款200元
+迟到30分钟以上 扣半日工资
+迟到一小时以上 扣3日工资
+输入迟到时间 月薪  输出罚款金额 自定义方法写
+* */
+public class TestMethod {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("请输入迟到的时间/min");
+        int time=s.nextInt();
+        System.out.println("请输入您的月薪/元");
+        int mmoney=s.nextInt();
+        money(time,mmoney);
+    }
+    public static void money(int time,int mmoney){
+        if(time>=1&&time<=10) {
+            System.out.println("警告，下次注意");
+        }
+        else if(time>=11&&time<=20){
+            System.out.println("罚款100元");
+        }
+        else if(time>=21&&time<=30){
+            System.out.println("罚款200元");
+        }
+        else if(time>=31&&time<=60){
+            System.out.println("罚款"+mmoney/22/2+"元");
+        }
+        else if(time>=61){
+            System.out.println("罚款"+mmoney/22*3+"元");
+        }
+        else {
+            System.out.println("您没有迟到");
+        }
+
+    }
+}

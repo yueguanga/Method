@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+/*方法的重载，就是方法名相同。
+* */
+public class TestMethod {
+    public static void main(String[] args) {
+        add();
+        add(10);
+    }
+    public static void add(){};
+    public static void add(int a){};
+}

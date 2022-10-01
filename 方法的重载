@@ -10,3 +10,10 @@ public class TestMethod {
     public static void add(){};
     public static void add(int a){};
 }
+/*    
+        add(10.1,10);
+        add(10,10.1);
+public static void add(double b,int a){};
+public static void add(int b,double a){};
+    这些也属于重载
+    */

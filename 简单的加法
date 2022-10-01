@@ -1,0 +1,20 @@
+//最简单的方法
+
+public class TestMethod {
+    public static void main(String[] args) {
+        //saylove();
+        add(3,4,5); //里面这个ABC是idea自动加的,345是自己的实参
+
+    }
+
+    public static void saylove() {
+        System.out.println("I");
+        System.out.println("LOVE");
+        System.out.println("YOU");
+    }
+
+    public static int add(int a, int b, int c) {
+        System.out.println(a+b+c);
+        return a+b+c;
+    }
+}
